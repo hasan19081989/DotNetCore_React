@@ -37,22 +37,22 @@ export class Spa_Main extends Component {
                     <div className="col-lg-2" style={{border:"2px solid black", borderRadius:"5px", marginTop:"10px", boxShadow:"2px 2px 2px 2px #ACACAC", height:"fit-content"}}>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="UploadFile" src="../../Images/divOne.jpg" style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <img id="UploadFile" src={require('../Images/divOne.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="EntityMapping" src="../../Images/divOne.jpg" style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <img id="EntityMapping" src={require('../Images/divTwp.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="Export" src="../../Images/divOne.jpg" style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <img id="Export" src={require('../Images/divThree.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="ResultGraph" src="../../Images/divOne.jpg" style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <img id="ResultGraph" src={require('../Images/divFour.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
                             </div>
                         </div>
                     </div>

@@ -71,7 +71,7 @@ export class ExportData extends Component {
                 <div className="row margin-top-20">
                     <div className="col-lg-12">
                         <button type="button" class="btn float-left btn-secondary col-lg-2">Back</button>
-                        <button type="button" class="btn float-right btn-primary col-lg-2">Next</button>
+                        <button type="button" class="btn float-right btn-primary col-lg-2">Export</button>
                     </div>
                 </div>
             </div >
