@@ -1,0 +1,9 @@
+﻿body {
+    background-color:lightgray;
+}
+
+.ResultGraph, .UploadFile, .Export, .EntityMapping {
+    margin:1%;
+    padding:1%;
+    border:2px solid red;
+}
