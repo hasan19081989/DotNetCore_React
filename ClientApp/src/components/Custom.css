@@ -11508,7 +11508,7 @@ h1, h2, h3, h4, h5,
 }
 
 .navbar {
-    /*padding: 10px*/;
+    /*padding: 10px;*/
     /*background: #2c3e50;*/
     border: none;
     border-radius: 0;
@@ -11578,7 +11578,8 @@ code {
     margin: 1px;
     position: relative;
     max-width: 73%;
-    margin-left : 21%;
+    /* margin-left : 21%; */
+    margin-left: 15%;
 }
 
 .border-dotted {
@@ -11598,6 +11599,14 @@ code {
     margin-top: 10px;
 }
 
+.margin-top-20{
+    margin-top: 20px;
+}
+
+.margin-top-5{
+    margin-top: 5px;
+}
+
 .label-style{
     font-size: 16px;
     line-height: initial;
@@ -11610,4 +11619,29 @@ code {
 
 .margin-bottom-clearfix{
     margin-bottom: 0px;
+}
+
+.margin-left-clearfix{
+    margin-left: 0px !important;
+}
+
+.margin-right-clearfix{
+    margin-right: 0px !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.padding-horizontal-clearfix{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-clearfix{
+    padding: 0px;
+}
+
+.padding-all-5{
+    padding: 5px;
 }

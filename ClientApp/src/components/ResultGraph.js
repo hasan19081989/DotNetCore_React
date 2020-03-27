@@ -24,67 +24,47 @@ export class ResultGraph extends Component {
         this.props.history.push('/ExportData');
     }
 
+    renderCheckbox(){
+        let arr = [];
+        for (let index = 1; index < 8; index++) {
+            arr.push(
+                <li class="list-group-item">
+                    <div class="custom-control custom-checkbox">
+                        <input id={index+'ID'} key={index+'key'} type="checkbox" class="custom-control-input" id="check1" checked />
+                        <label id={index+'ID'} key={index+'key'} class="custom-control-label" for={index+'ID'}>Check me</label>
+                    </div>
+                </li>
+            );
+        }
+        return arr;
+    }
+
     render() {
         return (
             <div className="">
                 <div className="row">
-                    <div className="col-lg-2">
-                        <div class="col mx-2">
-                            <label class="pb-1">List of Result graph</label>
+                    <div className="col-lg-3">
+                        <div class="padding-clearfix">
+                            <label class="pb-1 label-style">List of Result graph</label>
                             <ul class="list-group list-group-orientation">
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check1" checked />
-                                        <label class="custom-control-label" for="check1">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="check5" />
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
+                                {
+                                    this.renderCheckbox()
+                                }
                             </ul>
                         </div>
                     </div>
-                    <div className="col">
-                        <label class="pb-1">Result Graph</label>
+                    <div className="col-lg-9">
+                        <label class="pb-1 label-style">Result Graph</label>
                         <div class="scrollbar scrollbar-entire">
                             <div class="force-overflow m-1"></div>
                         </div>
                     </div>
                 </div>
-                <button type="button" onClick={this.onSubmitPrevious} class="btn float-left m-2 btn-outline-info">Back</button>
+                <div className="row margin-top-20">
+                    <div className="col-lg-12">
+                        <button type="button" class="btn float-left btn-secondary col-lg-2">Back</button>
+                    </div>
+                </div>
             </div>
         );
     }
