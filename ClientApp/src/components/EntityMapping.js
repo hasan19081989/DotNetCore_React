@@ -4,63 +4,25 @@ import './Scrollbar.css';
 import Checkbox from './Checkbox';
 
 export class EntityMapping extends Component {
-    static displayName = EntityMapping.name;
 
     constructor(props) {
         super(props);
-
-        this.toggleContent = this.toggleContent.bind(this);
-        this.state = {
-            collapsed: true,
-            check: true
-        };
     }
 
-    toggleContent() {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
-    }
-
-    renderCheckList(){
-        let arr=[];
+    renderCheckbox(appendWithId) {
+        let arr = [];
         for (let index = 1; index < 5; index++) {
-            // arr.push(
-            //     <li id={index} class="list-group-item">
-            //         <input key={index+'input'} type="checkbox" id={index} checked={this.state.check} onChange={this.checkBoxClickEvent.bind(this)} />
-            //         <label key={index+'label'}  for={index}>Check me</label>
-                    
-            //     </li>
-            // );
-
             arr.push(
                 <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <label class="custom-control-label" for="check1">Check me</label>
-                    </div>
+                    <Checkbox id={index + '-'+ appendWithId} onChange={this.checkBoxClickEvent.bind(this)} />
                 </li>
             );
         }
         return arr;
     }
 
-    
-    renderCheck(){
-        let arr=[];
-        for (let index = 1; index < 5; index++) {
-            arr.push(
-                <li id={index} class="list-group-item">
-                    <Checkbox id={index} checked={this.state.check} onChange={this.checkBoxClickEvent.bind(this)} />
-                </li>
-            );
-        }
-        return arr;
-    }
-
-    checkBoxClickEvent(event){
-        this.setState({
-            check: !this.state.check
-        });
+    checkBoxClickEvent(event) {
+        console.log(event);
     }
 
     render() {
@@ -85,58 +47,29 @@ export class EntityMapping extends Component {
                         <div className="margin-top-5">
                             <ul class="list-group list-group-orientation mb-1">
                                 {
-                                    this.renderCheckList()
+                                    this.renderCheckbox('EntityMapping')
                                 }
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div>                               
+                        <div>
                             <h5>Standard Masking</h5>
                             <ul class="list-group list-group-orientation">
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <label class="custom-control-label" for="check1">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="custom-control custom-checkbox">
-                                        <label class="custom-control-label" for="check5">Check me</label>
-                                    </div>
-                                </li>
+                                {
+                                    this.renderCheckbox('StandardMasking')
+                                }
                             </ul>
-                                <button type="button" class="btn float-left m-2 btn-secondary margin-left-clearfix col-lg-5">Remove</button>
-                                <button type="button" class="btn float-right m-2 btn-secondary margin-right-clearfix col-lg-5">Add</button>
+                            <button type="button" class="btn float-left m-2 btn-secondary margin-left-clearfix col-lg-5">Remove</button>
+                            <button type="button" class="btn float-right m-2 btn-secondary margin-right-clearfix col-lg-5">Add</button>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <h5>Custom Masking</h5>
                         <ul class="list-group list-group-orientation">
-                            <li class="list-group-item">
-                                <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label" for="check1">Check me</label>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label" for="check5">Check me</label>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label" for="check5">Check me</label>
-                                </div>
-                            </li>
-                            <li class="list-group-item">
-                                <div class="custom-control custom-checkbox">
-                                    <label class="custom-control-label" for="check5">Check me</label>
-                                </div>
-                            </li>
+                            {
+                                this.renderCheckbox('CustomMasking')
+                            }
                         </ul>
                     </div>
                 </div>

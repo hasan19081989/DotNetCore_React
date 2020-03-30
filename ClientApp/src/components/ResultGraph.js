@@ -1,42 +1,29 @@
 ﻿import React, { Component } from 'react';
 import './Custom.css';
 import './Scrollbar.css';
+import Checkbox from './Checkbox';
 
 export class ResultGraph extends Component {
     static displayName = ResultGraph.name;
 
     constructor(props) {
         super(props);
-
-        this.toggleContent = this.toggleContent.bind(this);
-        this.state = {
-            collapsed: true
-        };
     }
 
-    toggleContent() {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
-    }
-
-    onSubmitPrevious = () => {
-        this.props.history.push('/ExportData');
-    }
-
-    renderCheckbox(){
+    renderCheckbox(appendWithId) {
         let arr = [];
         for (let index = 1; index < 8; index++) {
             arr.push(
                 <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input id={index+'ID'} key={index+'key'} type="checkbox" class="custom-control-input" id="check1" checked />
-                        <label id={index+'ID'} key={index+'key'} class="custom-control-label" for={index+'ID'}>Check me</label>
-                    </div>
+                    <Checkbox id={index + '-'+ appendWithId} onChange={this.checkBoxClickEvent.bind(this)} />
                 </li>
             );
         }
         return arr;
+    }
+
+    checkBoxClickEvent(event) {
+        console.log(event);
     }
 
     render() {
@@ -48,7 +35,7 @@ export class ResultGraph extends Component {
                             <label class="pb-1 label-style">List of Result graph</label>
                             <ul class="list-group list-group-orientation">
                                 {
-                                    this.renderCheckbox()
+                                    this.renderCheckbox('ResultGraph')
                                 }
                             </ul>
                         </div>

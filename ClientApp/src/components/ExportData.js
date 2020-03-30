@@ -1,38 +1,29 @@
 ﻿import React, { Component } from 'react';
 import './Custom.css';
 import './Scrollbar.css';
+import Checkbox from './Checkbox';
 
 export class ExportData extends Component {
     static displayName = ExportData.name;
 
     constructor(props) {
         super(props);
-
-        this.toggleContent = this.toggleContent.bind(this);
-        this.state = {
-            collapsed: true
-        };
     }
 
-    toggleContent() {
-        this.setState({
-            collapsed: !this.state.collapsed
-        });
-    }
-
-    renderCheckbox(){
+    renderCheckbox(appendWithId) {
         let arr = [];
         for (let index = 1; index < 5; index++) {
             arr.push(
                 <li class="list-group-item">
-                    <div class="custom-control custom-checkbox">
-                        <input id={index+'ID'} key={index+'key'} type="checkbox" class="custom-control-input" checked />
-                        <label id={index+'ID'} key={index+'key'} class="custom-control-label" for={index+'ID'}>Check me</label>
-                    </div>
+                    <Checkbox id={index + '-'+ appendWithId} onChange={this.checkBoxClickEvent.bind(this)} />
                 </li>
             );
         }
         return arr;
+    }
+
+    checkBoxClickEvent(event) {
+        console.log(event);
     }
 
     render() {
@@ -44,18 +35,18 @@ export class ExportData extends Component {
                             <label class="pb-1 label-style">List of masked files</label>
                             <ul class="list-group">
                                 {
-                                    this.renderCheckbox()
+                                    this.renderCheckbox('ExportData')
                                 }
                             </ul>
                         </div>
                         <div className="col-lg-12 padding-all-5">
                             <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" />
-                                <label class="custom-control-label" for="customCheck">Export Audit logs</label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" name="example1" />
+                                <label class="custom-control-label" for="customCheck1">Export Audit logs</label>
                             </div>
                             <div class="custom-control custom-checkbox margin-top-5">
-                                <input type="checkbox" class="custom-control-input" id="customCheck" name="example1" />
-                                <label class="custom-control-label" for="customCheck">Update Database</label>
+                                <input type="checkbox" class="custom-control-input" id="customCheck2" name="example1" />
+                                <label class="custom-control-label" for="customCheck2">Update Database</label>
                             </div>
                         </div>
                     </div>

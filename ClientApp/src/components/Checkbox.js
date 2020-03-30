@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-const Checkbox = ({id, checked, onChange}) => (
+ const Checkbox = ({id, onChange}) => (
     <div class="custom-control custom-checkbox">
-        <input key={id+'-checkbox'} id={id} type="checkbox" checked={checked} onChange={onChange} />
-        <label key={id+'-checkbox'} for={id}>Check me</label>
+        <input id={id} key={id} type="checkbox" class="custom-control-input" onChange={e=> onChange(e)} />
+        <label id={id} key={id} class="custom-control-label" for={id}>Check me</label>
     </div>
 )
 
