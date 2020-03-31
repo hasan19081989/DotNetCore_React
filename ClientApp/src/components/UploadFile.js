@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import './Custom.css';
-import './Scrollbar.css';
+
 
 export class UploadFile extends Component {
     constructor(props) {

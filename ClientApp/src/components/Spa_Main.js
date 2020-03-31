@@ -3,7 +3,7 @@ import './Custom.css';
 import { EntityMapping } from './EntityMapping';
 import { ExportData } from './ExportData';
 import { ResultGraph } from './ResultGraph';
-import './Scrollbar.css';
+
 import './Spa_Main.css';
 import { UploadFile } from './UploadFile';
 

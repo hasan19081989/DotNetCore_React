@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
 import Checkbox from './Checkbox';
 import './Custom.css';
-import './Scrollbar.css';
+
 
 export class EntityMapping extends Component {
 

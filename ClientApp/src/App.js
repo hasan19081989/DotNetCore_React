@@ -8,7 +8,7 @@ import { ExportData } from './components/ExportData';
 import { Home } from './components/Home';
 import { Layout } from './components/Layout';
 import { ResultGraph } from './components/ResultGraph';
-import './components/Scrollbar.css';
+
 import { Spa_Main } from './components/Spa_Main';
 import './components/Spa_Main.css';
 import { UploadFile } from './components/UploadFile';
