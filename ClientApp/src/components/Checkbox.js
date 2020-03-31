@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
  const Checkbox = ({id, onChange}) => (
     <div class="custom-control custom-checkbox">

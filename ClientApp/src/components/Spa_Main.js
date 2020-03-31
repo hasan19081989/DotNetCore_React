@@ -1,10 +1,10 @@
 ﻿import React, { Component } from 'react';
 import './Custom.css';
+import { EntityMapping } from './EntityMapping';
+import { ExportData } from './ExportData';
+import { ResultGraph } from './ResultGraph';
 import './Scrollbar.css';
 import './Spa_Main.css';
-import { ResultGraph } from './ResultGraph';
-import { ExportData } from './ExportData';
-import { EntityMapping } from './EntityMapping';
 import { UploadFile } from './UploadFile';
 
 export class Spa_Main extends Component {
@@ -25,38 +25,44 @@ export class Spa_Main extends Component {
         });
     }
 
-    imageCLicked(e){
+    imageCLicked(e) {
         var test = document.getElementsByClassName(e.target.id)[0];
         test.scrollIntoView();
     }
 
     render() {
         return (
-            <div className="offset-lg-2">
+            <div className="offset-lg-2 mrgLeft">
                 <div className="row">
-                    <div className="col-lg-2" style={{border:"2px solid black", borderRadius:"5px", marginTop:"10px", boxShadow:"2px 2px 2px 2px #ACACAC", height:"fit-content"}}>
+                    <div className="col-lg-1 numericPane">
+                        <div className="verticaProg"></div>
                         <div className="row">
-                            <div className="col-lg-12">
-                                <img id="UploadFile" src={require('../Images/divOne.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                            <div className="col-lg-12">                                
+                                <div class="numberCircle" id="UploadFile" onClick={this.imageCLicked.bind(this)}>1</div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="EntityMapping" src={require('../Images/divTwp.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <div class="numberCircle" id="EntityMapping" onClick={this.imageCLicked.bind(this)}>2</div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="Export" src={require('../Images/divThree.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <div class="numberCircle" id="Export" onClick={this.imageCLicked.bind(this)}>3</div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12">
-                                <img id="ResultGraph" src={require('../Images/divFour.png')} style={{width:"50px", height:"50px"}} onClick={this.imageCLicked.bind(this)} />
+                                <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>4</div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-12">
+                                <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>5</div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-10">
+                    <div className="col-lg-11 rhtPane">
                         <div className="UploadFile">
                             <UploadFile />
                         </div>
@@ -70,7 +76,7 @@ export class Spa_Main extends Component {
                         <div className="ResultGraph">
                             <ResultGraph />
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
         );

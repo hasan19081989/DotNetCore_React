@@ -200,7 +200,7 @@ figure {
 }
 
 img {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
     border-style: none;
 }
 
@@ -450,7 +450,7 @@ mark,
 
     .list-unstyled li {
         display: inline-block;
-        font-size: 14px !important;
+        /*font-size: 14px !important;*/
     }
 
 .list-inline {
@@ -11591,41 +11591,41 @@ code {
     margin-bottom: 0px;
 }
 
-.margin-left-10{
+.margin-left-10 {
     margin-left: 10px;
 }
 
-.margin-top-10{
+.margin-top-10 {
     margin-top: 10px;
 }
 
-.margin-top-20{
+.margin-top-20 {
     margin-top: 20px;
 }
 
-.margin-top-5{
+.margin-top-5 {
     margin-top: 5px;
 }
 
-.label-style{
+.label-style {
     font-size: 16px;
     line-height: initial;
 }
 
-.horizontal-line-style{
+.horizontal-line-style {
     margin-top: 5px !important;
     border-top: 1px solid black;
 }
 
-.margin-bottom-clearfix{
+.margin-bottom-clearfix {
     margin-bottom: 0px;
 }
 
-.margin-left-clearfix{
+.margin-left-clearfix {
     margin-left: 0px !important;
 }
 
-.margin-right-clearfix{
+.margin-right-clearfix {
     margin-right: 0px !important;
 }
 
@@ -11633,15 +11633,70 @@ html {
     scroll-behavior: smooth;
 }
 
-.padding-horizontal-clearfix{
+.padding-horizontal-clearfix {
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.padding-clearfix{
+.padding-clearfix {
     padding: 0px;
 }
 
-.padding-all-5{
+.padding-all-5 {
     padding: 5px;
+}
+
+.mrgLeft {
+    margin-left: 13.66667%;
+    position: relative;
+    top: 50px;
+}
+
+.numberCircle {
+    border-radius: 50%;
+    padding: 25px;
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    margin-top: 30px;
+}
+
+.verticaProg {
+    border-left: 6px solid green;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0
+}
+
+.numericPane {
+    position: fixed !important;
+    border: "2px solid black";
+    borderRadius: "5px";
+    marginTop: "10px";
+    boxShadow: "2px 2px 2px 2px #ACACAC";
+}
+
+.rhtPane {
+    margin-left: auto !important;
+}
+
+.fixTop {
+    top: 0 !important;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    margin-left: 12%;
+    max-width: 88%;
+    background-color: #2b2d42 !important;
+    color: white !important;
+}
+
+.btnHighlight {
+    color: white
 }

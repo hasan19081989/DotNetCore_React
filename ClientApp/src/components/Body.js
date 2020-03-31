@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Custom.css';
-import { Progress } from './Progress';
 import { Sidebar } from './Sidebar';
 
 export class Body extends Component {

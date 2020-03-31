@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
-import { UploadFile } from './components/UploadFile';
-import { EntityMapping } from './components/EntityMapping';
-import { ConfigureDatabase } from './components/ConfigureDatabase';
 import { Configuration } from './components/Configuration';
-import { ExportData } from './components/ExportData';
-import { ResultGraph } from './components/ResultGraph';
-import { Spa_Main } from './components/Spa_Main';
+import { ConfigureDatabase } from './components/ConfigureDatabase';
 import './components/Custom.css';
-import './components/Scrollbar.css';
-import './components/Spa_Main.css';
+import { EntityMapping } from './components/EntityMapping';
+import { ExportData } from './components/ExportData';
 import { Home } from './components/Home';
 import { Layout } from './components/Layout';
+import { ResultGraph } from './components/ResultGraph';
+import './components/Scrollbar.css';
+import { Spa_Main } from './components/Spa_Main';
+import './components/Spa_Main.css';
+import { UploadFile } from './components/UploadFile';
 
 export default class App extends Component {
   static displayName = App.name;

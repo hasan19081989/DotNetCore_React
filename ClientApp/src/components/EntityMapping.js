@@ -1,7 +1,7 @@
 ﻿import React, { Component } from 'react';
+import Checkbox from './Checkbox';
 import './Custom.css';
 import './Scrollbar.css';
-import Checkbox from './Checkbox';
 
 export class EntityMapping extends Component {
 
@@ -31,18 +31,7 @@ export class EntityMapping extends Component {
                 <h5 className="margin-bottom-clearfix">Content 2 - Enitity Mapping</h5>
                 <hr className="horizontal-line-style" />
                 <div className="row">
-                    <div class="col-lg-3">
-                        <label className="label-style" for="sel2">Mutiple select list of uploaded files (hold shift to select more than one):</label>
-                        <select multiple class="form-control" id="sel2" name="sellist2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                        <button type="button" class="btn btn-secondary margin-top-10">Remove files</button>
-                    </div>
-                    <div class="col-lg-3">
+                   <div class="col-lg-3">
                         <button type="button" class="btn btn-secondary">Select All</button>
                         <div className="margin-top-5">
                             <ul class="list-group list-group-orientation mb-1">

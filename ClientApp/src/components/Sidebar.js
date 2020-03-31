@@ -38,19 +38,6 @@ export class Sidebar extends Component {
                         </li>
                     </ul>
                 </div>
-                <div className="col-lg-2 p-4 pt-5 float-right">
-                    <ul className="list-unstyled components mb-5">
-                        <li className="active">
-                            <a>1</a>
-                        </li>
-                        <li className="active">
-                            <a>2</a>
-                        </li>
-                        <li className="active">
-                            <a>3</a>
-                        </li>
-                    </ul>
-                </div>
             </nav>
         );
     }
