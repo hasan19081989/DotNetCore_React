@@ -41,7 +41,7 @@
 *::before,
 *::after {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 html {
@@ -63,21 +63,22 @@ body {
     line-height: 1.5;
     color: #212529;
     text-align: left;
-    background-color: #fff;
+    /*background-color: #fff;*/
+    background-color: rgba(var(--b3f,250,250,250),1);
 }
 
-    *::-webkit-scrollbar {
-        width: 1em;
-    }
+*::-webkit-scrollbar {
+    width: 1em;
+}
 
-    *::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    }
+*::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
 
-    *::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        outline: 1px solid slategrey;
-    }
+*::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
 
 [tabindex="-1"]:focus {
     outline: 0 !important;
@@ -11667,34 +11668,33 @@ html {
 
 .numberCircle {
     border-radius: 50%;
-    padding: 25px;
-    background: #fff;
-    border: 2px solid #666;
+    /*padding: 0 15px 0 15px;*/
+    background-color: #fff;
+    border: 4px solid #fff;
     color: #666;
     text-align: center;
-    font: 32px Arial, sans-serif;
-    margin-top: 30px;
+    font: 40px Arial, sans-serif;
+    margin-top: 60px;
+    box-shadow: 0 0 0 5px lightgray;
 }
 
+    .numberCircle.nomargin {
+        margin-top: 0;
+    }
+
 .verticaProg {
-    border-left: 6px solid green;
+    border-left: 4px solid lightgray;
     height: 100%;
     position: absolute;
     left: 50%;
-    top: 0;
-    bottom: 0
 }
 
 .numericPane {
     position: fixed !important;
-    border: "2px solid black";
-    borderRadius: "5px";
-    marginTop: "10px";
-    boxShadow: "2px 2px 2px 2px #ACACAC";
 }
 
 .rhtPane {
-    margin-left: auto !important;
+    margin-left: auto !important;    
 }
 
 .fixTop {
@@ -11713,3 +11713,99 @@ html {
 .btnHighlight {
     color: white
 }
+
+#sidebar {
+    max-width: 12%;
+    background: #2b2d42 !important;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
+    #sidebar.active {
+        margin-left: -300px;
+    }
+
+    #sidebar .logo {
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+        #sidebar .logo span {
+            display: block;
+        }
+
+    #sidebar ul.components {
+        padding: 0;
+    }
+
+    #sidebar ul li {
+        font-size: 16px;
+    }
+
+        #sidebar ul li > ul {
+            margin-left: 10px;
+        }
+
+            #sidebar ul li > ul li {
+                font-size: 14px;
+            }
+
+        #sidebar ul li a {
+            /*padding: 10px 0;*/
+            display: block;
+            color: #ecf0f1;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            /*margin-left: 4px;*/
+        }
+
+            #sidebar ul li a:hover {
+                color: #f8b739;
+            }
+
+        #sidebar ul li.active > a {
+            background: transparent;
+            color: #f39c12 !important;
+        }
+
+.config {
+    bottom: 0;
+    position: fixed;
+    color: yellow;
+}
+
+div.row div.p35 {
+    padding: 5px 35px 0 35px;
+}
+
+.ResultGraph, .UploadFile, .Export, .EntityMapping {
+    margin: 10px;
+    padding: 1%;
+    border-bottom: 2px solid black;
+    /*border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #ACACAC;*/
+    /*margin-bottom: 20px;*/
+    height: 700px;
+}
+
+.mrgLft6P {
+    margin-top: 6%;
+}
+
+.btnContainer {
+    justify-content: space-between;
+    flex-direction: column;
+    /*height: 100vh;*/
+    display: flex;
+}
+
+    .btnContainer .btn-holder {
+        justify-content: flex-end;
+        display: flex;
+    }

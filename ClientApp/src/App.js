@@ -9,8 +9,7 @@ import { Home } from './components/Home';
 import { Layout } from './components/Layout';
 import { ResultGraph } from './components/ResultGraph';
 
-import { Spa_Main } from './components/Spa_Main';
-import './components/Spa_Main.css';
+import { Content } from './components/Content';
 import { UploadFile } from './components/UploadFile';
 
 export default class App extends Component {
@@ -26,7 +25,7 @@ export default class App extends Component {
             <Route path='/Configuration' component={Configuration} />
             <Route path='/ExportData' component={ExportData} />
             <Route path='/ResultGraph' component={ResultGraph} />
-            <Route path='/Spa_Main' component={Spa_Main} />
+            <Route path='/Content' component={Content} />
       </Layout>
     );
   }

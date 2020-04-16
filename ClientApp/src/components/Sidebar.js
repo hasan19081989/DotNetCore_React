@@ -33,8 +33,11 @@ export class Sidebar extends Component {
                         <li className="active">
                             <NavLink tag={Link} to="/ConfigureDatabase">Database</NavLink>
                         </li>
-                        <li className="config">
+                        <li className="active">
                             <NavLink tag={Link} to="/Configuration">Configuration</NavLink>
+                        </li>
+                        <li className="config">
+                            <NavLink tag={Link} to="/Configuration">Sign Out</NavLink>
                         </li>
                     </ul>
                 </div>

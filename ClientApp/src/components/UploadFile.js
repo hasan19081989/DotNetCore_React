@@ -13,7 +13,7 @@ export class UploadFile extends Component {
                 <h4 className="margin-bottom-clearfix">Upload File</h4>
                 <hr className="horizontal-line-style" />
                 <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 mrgLft6P">
                         <input className="btn btn-info btn-lg" type="file" multiple />
                         <label class="pb-1 margin-left-10 label-style">Supported formats: CSV, XLS, XLSX, TXT</label>
                     </div>
@@ -31,9 +31,9 @@ export class UploadFile extends Component {
                             <button type="button" class="btn btn-secondary my-2">Remove files</button>
                         </div>
                     </div>
-                </div>
-                <div className="row margin-top-10">
-                    <div className="col-lg-2 offset-lg-10">
+                </div>    
+                <div className="row margin-top-10 btnContainer">
+                    <div className="col-lg-2 offset-lg-10 btn-holder">
                         <button type="button" className="btn btn-primary col-12">Next</button>
                     </div>
                 </div>

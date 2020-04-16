@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Custom.css';
-import './Sidebar.css';
 
 export class Home extends Component {
     static displayName = Home.name;

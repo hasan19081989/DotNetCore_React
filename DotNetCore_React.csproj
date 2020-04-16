@@ -33,6 +33,8 @@
   <ItemGroup>
     <None Remove="ClientApp\src\components\Progress.js" />
     <None Remove="ClientApp\src\components\Scrollbar.css" />
+    <None Remove="ClientApp\src\components\Sidebar.css" />
+    <None Remove="ClientApp\src\components\Spa_Main.css" />
   </ItemGroup>
 
   <ItemGroup>
