@@ -50,29 +50,24 @@ export class Content extends Component {
                         <div className="verticaProg"></div>
                         <div className="row">
                             <div className="col-lg-12 p35">
-                                <div class="numberCircle nomargin" id="UploadFile" onClick={this.imageCLicked.bind(this)}>1</div>                                
+                                <div class="numberCircle nomargin"><i className="fa fa-upload"  id="UploadFile" onClick={this.imageCLicked.bind(this)}></i></div>                                
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12 p35">
-                                <div class="numberCircle" id="EntityMapping" onClick={this.imageCLicked.bind(this)}>2</div>
+                                <div class="numberCircle"><i className="fa fa-shield"  id="EntityMapping" onClick={this.imageCLicked.bind(this)}></i></div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12 p35">
-                                <div class="numberCircle" id="Export" onClick={this.imageCLicked.bind(this)}>3</div>
+                                <div class="numberCircle"><i className="fa fa-file"  id="Export" onClick={this.imageCLicked.bind(this)}></i></div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-lg-12 p35">
-                                <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>4</div>
+                                <div class="numberCircle"><i className="fa fa-pie-chart"  id="ResultGraph" onClick={this.imageCLicked.bind(this)}></i></div>
                             </div>
                         </div>
-                        {/* <div className="row">
-                            <div className="col-lg-12 p35">
-                                <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>5</div>
-                            </div>
-                        </div> */}
                     </div>
                     <div className="col-lg-11 rhtPane">
                         <div className="UploadFile card">

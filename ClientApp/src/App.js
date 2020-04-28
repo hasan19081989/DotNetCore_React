@@ -12,6 +12,8 @@ import { ResultGraph } from './components/ResultGraph';
 import { Content } from './components/Content';
 import { UploadFile } from './components/UploadFile';
 
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+
 export default class App extends Component {
   static displayName = App.name;
 

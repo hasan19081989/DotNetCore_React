@@ -57,12 +57,12 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
-    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
+    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: gray;
+    text-align: justify;
     /*background-color: #fff;*/
     background-color: rgba(var(--b3f,250,250,250),1);
 }
@@ -242,6 +242,7 @@ th {
 label {
     display: inline-block;
     margin-bottom: 0.5rem;
+    color: #575d61;
 }
 
 button {
@@ -383,6 +384,8 @@ h1, h2, h3, h4, h5, h6,
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
+    color: black;
+    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
 }
 
 h1, .h1 {
@@ -2917,6 +2920,7 @@ fieldset:disabled a.btn {
         color: #fff;
         background-color: #138496;
         border-color: #117a8b;
+        cursor: pointer;
     }
 
     .btn-info:focus, .btn-info.focus {
@@ -11448,7 +11452,7 @@ a.text-dark:hover, a.text-dark:focus {
         border-color: #dee2e6;
     }
 }
-
+/* 
 body {
     font-family: "Poppins", Arial, sans-serif;
     font-size: 14px;
@@ -11456,8 +11460,7 @@ body {
     font-weight: normal;
     background: #fafafa;
     color: gray;
-    /*background-image: url("https://static.tumblr.com/26l8vc7/q7Glbweh4/bg.jpg")*/
-}
+} */
 
 a {
     -webkit-transition: .3s all ease;
@@ -11486,13 +11489,13 @@ button {
         box-shadow: none !important;
     }
 
-h1, h2, h3, h4, h5,
-.h1, .h2, .h3, .h4, .h5 {
+/* h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
     line-height: 1.5;
     font-weight: 400;
     font-family: "Poppins", Arial, sans-serif;
     color: #000;
-}
+} */
 
 .ftco-section {
     padding: 7em 0;
@@ -11622,7 +11625,7 @@ code {
 }
 
 .label-style {
-    font-size: 16px;
+    font-size: 15px;
     line-height: initial;
 }
 
@@ -11670,13 +11673,12 @@ html {
     border-radius: 50%;
     /*padding: 0 15px 0 15px;*/
     background-color: #fff;
-    border: 4px solid #fff;
+    border: 8px solid #fff;
     color: #666;
     text-align: center;
-    font: 20px Arial, sans-serif;
+    font: 18px Arial, sans-serif;
     margin-top: 60px;
     box-shadow: 0 0 0 5px lightgray;
-    cursor: pointer;
 }
 
     .numberCircle.nomargin {
@@ -11814,4 +11816,26 @@ div.row div.p35 {
 
  .card {
      border-radius: 1.5%;
+     padding: 0;
+ }
+
+ .UploadFileDiv,
+  .EntityMappingDiv,
+   .ExportDataDiv,
+    .ResultGraphDiv {
+    position: relative;
+    top: 25%;
+    padding: 1%;
+ }
+
+ .card-header {
+     background-image: linear-gradient(#eef4f7, #d4d7da);
+ }
+
+ .chooseFiles {
+     text-align: center;
+ }
+
+ i {
+   cursor: pointer;
  }
