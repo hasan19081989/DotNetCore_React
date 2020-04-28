@@ -29,6 +29,8 @@ export class ExportData extends Component {
     render() {
         return (
             <div className="">
+                <h5 className="margin-bottom-clearfix">Export Data</h5>
+                <hr className="horizontal-line-style" />
                 <div className="row">
                     <div class="col col-lg-3">
                         <div class="col ml-1 padding-horizontal-clearfix">

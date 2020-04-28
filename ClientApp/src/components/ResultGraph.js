@@ -29,6 +29,8 @@ export class ResultGraph extends Component {
     render() {
         return (
             <div className="">
+                <h5 className="margin-bottom-clearfix">Result Graph</h5>
+                <hr className="horizontal-line-style" />
                 <div className="row">
                     <div className="col-lg-3">
                         <div class="padding-clearfix">

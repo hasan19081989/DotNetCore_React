@@ -28,7 +28,7 @@ export class EntityMapping extends Component {
     render() {
         return (
             <div className="">
-                <h5 className="margin-bottom-clearfix">Content 2 - Enitity Mapping</h5>
+                <h5 className="margin-bottom-clearfix">Enitity Mapping</h5>
                 <hr className="horizontal-line-style" />
                 <div className="row">
                    <div class="col-lg-3">

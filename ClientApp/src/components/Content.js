@@ -68,23 +68,23 @@ export class Content extends Component {
                                 <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>4</div>
                             </div>
                         </div>
-                        <div className="row">
+                        {/* <div className="row">
                             <div className="col-lg-12 p35">
                                 <div class="numberCircle" id="ResultGraph" onClick={this.imageCLicked.bind(this)}>5</div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="col-lg-11 rhtPane">
-                        <div className="UploadFile">
+                        <div className="UploadFile card">
                             <UploadFile />                            
                         </div>
-                        <div className="EntityMapping">
+                        <div className="EntityMapping card">
                             <EntityMapping />
                         </div>
-                        <div className="Export">
+                        <div className="Export card">
                             <ExportData />
                         </div>
-                        <div className="ResultGraph">
+                        <div className="ResultGraph card">
                             <ResultGraph />
                         </div>
                     </div>
